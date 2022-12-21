@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Supermercado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+
+        background-color: rgb(107, 121, 121);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 20px 0;
+        font-size: 20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .lista-cadastro {
+            display: flex;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+
+        .lista-cadastro input[type=text]{
+            flex:1;
+            height: 40px;
+            padding-left: 20px;
+            margin-left: 30px;
+            padding: 0px 15px 0px 15px ;
+        }
+
+        .lista-cadastro input[type=submit]{
+            margin-left: 30px;
+            padding: 0px 15px 0px 15px ;
+            border-radius: 15px;
+            border-color: rgb(77, 73, 73);
+        }
+        
+        button{
+            margin-left: 30px;
+            padding: 10px;
+            width: 80px;
+            border-radius: 15px;
+            border-color: rgb(77, 73, 73);
+        }
+        .lista-produto-single {
+            padding: 10px 0;
+            border-bottom: 1px solid rgb(204, 204, 204);
+            display: flex;
+        }
+        .lista-produto-single h3{
+            flex: 1;
+            padding: 0 20px;
+        }
+        h3.price-produto{
+            text-align: right;
+            font-size: 17px;
+
+        }
+
+        h3.price-produto > span{
+            background-color:  rgba(8, 34, 34, 0.555);
+            padding: 8px 10px;
+            border-radius: 20px;
+        }
+        .soma-produto{
+            margin: 20 0px;
+            background-color:  rgb(107, 121, 121);
+            padding: 15px 15px;
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>Lista de Supermercado</header>
+    <div class="lista-cadastro">
+        <input type="text" placeholder="nome do produto..." name="nome_produto">
+        <input type="text" placeholder= "valor do produto..." name="valor_produto">
+        <input type="submit" name="acao" value="Cadastrar">
+        <button name="limpar">Limpar</button>
+    </div>
+
+    <div class="lista-produtos">
+    
+    
+    </div>
+     
+
+    <div class="soma-produto">
+    <h1>Total: R$ 0,00</h1>
+    
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
